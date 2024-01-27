@@ -1,1 +1,1 @@
-window.alert("Hey this is working!");
+import "./styles.css";
