@@ -1,5 +1,106 @@
-body {
+:root{
+    --font-color: gold;
+    --font-family: 'Cinzel', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    color: var(--font-color);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     background-image: url("./assets/dining.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav {
+    display: flex;
+    gap: 2em;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+header > nav > button {
+    background-color: transparent;
+    padding: 10px;
+    border: 0px solid gold;
+    box-shadow: 0em 0em 0.3em 0.3em gold;
+    border-radius: 30%;
+}
+
+#intro-page, #about-us, #times, #contact {
+    text-align: center;
+}
+
+#intro-page {
+    font-size: 10em;
+}
+
+#about-us, #times, #cafe-menu, #contact {
+    font-size: 2em;
+}
+
+#cafe-menu > img {
+    max-height: 100%;
+    max-width: 500px;
+}
+
+#cafe-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(57, 75%, 49%, 0.63);
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0 10px 15px 10px black;
+    color: black;
+}
+
+footer > a {
+    text-decoration: none;
+    color: black;   
+}
+
+a:active{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
