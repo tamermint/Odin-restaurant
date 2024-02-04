@@ -1,5 +1,6 @@
 import "./styles.css";
 import loadHome from "./modules/Home";
+import loadAbout from "./modules/About";
 
 //import other functions to retrieve content.
 
