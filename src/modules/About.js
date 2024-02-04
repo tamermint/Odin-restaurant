@@ -3,7 +3,11 @@ function loadAbout() {
   content.textContent = "";
   content.style.padding = "4em";
 
-  const aboutBtn = document.querySelector("#about-btn");
+  const menubtn = document.querySelector("menu-btn");
+  const homebtn = document.querySelector("home-btn");
+
+  menubtn.classList.remove("not-allowed");
+  homebtn.classList.remove("not-allowed");
 
   const aboutUs = document.createElement("div");
   aboutUs.setAttribute("id", "about-us");
@@ -34,6 +38,7 @@ function loadAbout() {
     times.style.opacity = "1";
   }, 1000);
 
+  const aboutBtn = document.querySelector("#about-btn");
   aboutBtn.classList.add("not-allowed");
 }
 
