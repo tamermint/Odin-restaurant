@@ -52,6 +52,12 @@ header > nav > button {
     border: 0px solid gold;
     box-shadow: 0em 0em 0.3em 0.3em gold;
     border-radius: 30%;
+    cursor: pointer;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 #intro-page, #about-us, #times, #contact {
@@ -60,6 +66,8 @@ header > nav > button {
 
 #intro-page {
     font-size: 10em;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 #about-us, #times, #cafe-menu, #contact {
