@@ -3,8 +3,8 @@ function loadAbout() {
   content.textContent = "";
   content.style.padding = "4em";
 
-  const menubtn = document.querySelector("menu-btn");
-  const homebtn = document.querySelector("home-btn");
+  const menubtn = document.querySelector("#menu-btn");
+  const homebtn = document.querySelector("#home-btn");
 
   menubtn.classList.remove("not-allowed");
   homebtn.classList.remove("not-allowed");
