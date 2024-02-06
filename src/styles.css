@@ -107,7 +107,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: hsla(57, 75%, 49%, 0.63);
-    border-radius: 10px 0 10px 0;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 0 10px 15px 10px black;
     color: black;
 }
